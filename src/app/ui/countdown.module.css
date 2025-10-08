@@ -1,0 +1,30 @@
+.countdown {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  color: white;
+}
+
+.countdown .block_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.countdown .block_text {
+  background-color: rgb(19, 189, 166);
+  width: 61px;
+  height: 57px;
+  font-size: 25px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.countdown .block_desc {
+  font-size: 12px;
+  font-weight: 400;
+}

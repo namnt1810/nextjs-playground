@@ -1,0 +1,47 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  grid-row-start: 2;
+  margin-top: 56px;
+  width: 100%;
+}
+
+.main ol {
+  font-family: var(--font-geist-mono);
+  padding-left: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  list-style-position: inside;
+}
+
+.main li:not(:last-of-type) {
+  margin-bottom: 8px;
+}
+
+.main code {
+  font-family: inherit;
+  background: var(--gray-alpha-100);
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.main .countdown {
+  height: 240px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  background: linear-gradient(15deg, rgb(8, 71, 148), rgb(57, 166, 73));
+}
+
+@media (max-width: 600px) {
+  .main .countdown {
+    height: 280px;
+    flex-direction: column;
+    gap: 12px;
+  }
+}

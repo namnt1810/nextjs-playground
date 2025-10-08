@@ -1,0 +1,21 @@
+.header {
+  grid-row-start: 1;
+  display: flex;
+  height: 56px;
+  width: 100%;
+  flex-direction: row;
+  align-self: flex-start;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, rgb(8, 71, 148), rgb(57, 166, 73));
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .header h3:hover {
+    color: rgb(0, 181, 79);
+  }
+}
