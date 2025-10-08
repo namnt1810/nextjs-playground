@@ -1,6 +1,11 @@
 import Link from "next/link";
 import styles from "./body.module.css";
-import Countdown from "./countdown";
+import dynamic from "next/dynamic";
+
+const DynamicCountdown = dynamic(() => import("./countdown"), {
+  ssr: true,
+  loading: () => <p>Loading...</p>,
+});
 
 export default function Body({}) {
   return (
@@ -24,7 +29,7 @@ export default function Body({}) {
           }}
         >
           <h1 className={styles.title}>Countdown</h1>
-          <Countdown
+          <DynamicCountdown
             style={{ height: "auto", width: "auto" }}
             toDate={new Date("2025-10-15T23:59:00+07:00")}
           />
